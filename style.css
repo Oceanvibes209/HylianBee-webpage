@@ -1,34 +1,60 @@
 html{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(69, 69, 222);
+    background-image: url(pics/zelda-all-links.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-color: #464646;
 }
-#title{
+#title, h1{
     text-align: center;
 }
 
 body{
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
     height: 75vh;
-    background-color: rgb(193, 131, 250);
 }
-#games-played{
+
+#bio{
+    background-color: rgb(220, 186, 253);
+}
+#bio-text{
+    color: black;
+}
+
+#profile-pic{
+    display: flex;
+    justify-content: center;  
+}
+
+#profile-pic img{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 3px 3px;
+}
+#games-played, #future-games, #title{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     flex-wrap:wrap;
-
 }
 
-#games-played img{
+#game img{
     height: 150px;
     width: 250px;
+    box-shadow: 2px 4px black;
 }
 
 #title h1:hover{
     cursor: pointer;
 }
 
-#games-played img:hover{
-    scale: 300%;
+#game img:hover{
+    scale: 200%;
     cursor: pointer;
 }
